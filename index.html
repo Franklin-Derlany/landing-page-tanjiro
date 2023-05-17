@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Treino-1</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-f"></i> 
+            </div>
+
+            <i id="burguer" class="material-icons" onclick="clickMenu ()">menu</i>
+            <div id="itens">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Trabalho</a></li>
+
+                <button>Meu contato</button>
+            </div>
+        </header>
+
+        <div class="container-text">
+            <div class="text">
+                <h3>Olá, pessoal</h3>
+                <h1>Eu sou <span>Franklin Derlany</span> </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quas modi! Harum sapiente, quaerat exercitationem ut consectetur totam vitae eos doloremque dignissimos sed expedita optio alias nobis, animi dolore quae.</p>
+                
+                <div class="redes-sociais">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a> 
+                </div>
+                
+                <button class="btn">Sobre mim</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth <= 600) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }    
+    </script>
+</body>
+</html>
